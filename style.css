@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	background: rgba(30, 30, 30, 0.05);
+}
+
+/*Ce qui fait que la navbar reste en haut*/
+.my-navbar {
+	background: white;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/*Comment le texte va s'étirer dans la navbar*/
+.my-navbar-container {
+	margin: 0 30px;
+	/*Crée un flexbox*/
+	display: flex;
+	/*Centre verticalement dans la navbar*/
+	align-items: center;
+	/*Pousse le contenu des 2 côtés*/
+	justify-content: space-between;
+	height: 100%;
+}
+
+.my-navbar a {
+	margin-left: 10px;
+}
+
+.my-navbar-placeholder {
+	width:100%;
+	height:60px;
+}
+
+.landing {
+	background: red;
+	height: calc(100vh - 60px);
+}
+
+.interests {
+	background: blue;
+}
+
+.projects{
+	background: green;
+	height: 50vh;
+}
+.recommendations {
+	background: yellow;
+	height: 50vh;
+}
+
+.my-footer {
+	height: 25vh;
+}
+
+#guillaume_pic {
+	background-image: url("images/guillaume_profile.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+
+.landing-content{
+	height: 600px;
+}
+
+        
+ .flex-container {
+ 	height: 100vh;
+  display: flex;
+  align-items: center;
+}
