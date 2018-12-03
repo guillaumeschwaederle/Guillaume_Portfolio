@@ -5,6 +5,7 @@
 <title>Document</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
 <body>
   <div class="my-navbar">
@@ -13,10 +14,10 @@
         <h2>Image logo</h2>
       </div>
       <div class="my-navbar-right">
-        <a href="#">Interests</a>
-        <a href="#">Key projects</a>
-        <a href="#">Recommendations</a>
-        <a href="#">Get in touch</a>
+        <a href="#interests">Interests</a>
+        <a href="#projects">Key projects</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#contact">Social Media</a>
       </div>
     </div>
   </div>
@@ -26,20 +27,26 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 col-sm-6 col-12">
-          <div id="guillaume_pic"></div>
+          <div class="landing-content">
+            <div id="guillaume_pic"></div>
+          </div>
         </div>
+
         <div class="col-lg-8 col-sm-6 col-12">
           <div class="landing-content">
-            <h1>Hello I am Guillaume Schwaederlé</h1>
-            <h2>passionate about ... </h2>
-            <a href="" class="button-main">Button Contact</a>
+            <div>
+              <h1>Hello I am Guillaume Schwaederlé</h1>
+              <h2>passionate about <span class="element"></span> </h2>
+              <a href="" class="button-main">Drop me an e-mail</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="interests">
+
+  <div class="interests" id="interests">
     <div class="container">
       <div class="flex-container">
         <div>
@@ -47,7 +54,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-6 col-12">
               <div class="interest">
-                <img src="" alt="">
+                <img src="images/interests/pull-up.png" alt="icon of a person performing a pull-up">
                 <h3>Interest 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
               </div>
@@ -98,36 +105,40 @@
     </div>
   </div>
 
-  <div class="projects">
+
+  <div class="projects" id="projects">
     <div class="container-fluid">
     <h2>Key projects I've been involded in</h2>
     <div class="row">
         <div class="col-lg-4 col-sm-6 col-12">
-          <a href="https://www.facebook.com/photo.php?fbid=10153711577242333&set=picfp.722947332&type=3&theater" target="_blank">
-            <div class="project">
-              <img src="" alt="">
-              <h3>Project 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+          <a href="https://www..." target="_blank">
+            <div class="project" style="background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1)), url(images/guillaume_profile.jpg)">
+              <div class="project-content">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+              </div>
             </div>
           </a>
         </div>
 
         <div class="col-lg-4 col-sm-6 col-12">
-          <a href="https://www.facebook.com/photo.php?fbid=10153711577242333&set=picfp.722947332&type=3&theater" target="_blank">
-            <div class="project">
-              <img src="" alt="">
-              <h3>Project 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+          <a href="https://www..." target="_blank">
+            <div class="project" style="background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1)), url(images/guillaume_profile.jpg)">
+              <div class="project-content">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+              </div>
             </div>
           </a>
         </div>
 
         <div class="col-lg-4 col-sm-6 col-12">
-          <a href="https://www.facebook.com/photo.php?fbid=10153711577242333&set=picfp.722947332&type=3&theater" target="_blank">
-            <div class="project">
-              <img src="" alt="">
-              <h3>Project 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+          <a href="https://www..." target="_blank">
+            <div class="project" style="background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(10, 10, 10, 0.1)), url(images/guillaume_profile.jpg)">
+              <div class="project-content">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe qui laborum accusamus illum molestiae autem eum. In voluptates fuga eligendi ullam facilis velit sunt iste magnam, blanditiis eius sint quaerat!</p>
+              </div>
             </div>
           </a>
         </div>
@@ -135,22 +146,39 @@
     </div>
   </div>
 
-  <div class="recommendations">
+
+  <div class="recommendations" id="recommendations">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div>hello 1</div>
+          <div>
+            <div class="recommendation">
+              <h3>NAME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eaque, suscipit ipsam sed similique id, explicabo amet magnam culpa ipsum tenetur tempore voluptatem hic ab reprehenderit quisquam commodi. Fuga, veniam.</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <div>hello 2</div>
+          <div>
+            <div class="recommendation">
+              <h3>NAME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloribus quisquam esse adipisci sed, eius corporis, excepturi ex quidem provident, dolores temporibus unde soluta doloremque voluptate minus id nihil nostrum.</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <div>hello 3</div>
+          <div>
+            <div class="recommendation">
+              <h3>NAME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque corporis rerum, culpa animi quia ducimus nihil nulla blanditiis perspiciatis. Quae totam laborum, dolorum consequuntur? Obcaecati quod doloribus labore recusandae sunt.</p>
+            </div>
+          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -162,14 +190,24 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
   </div>
-  <div class="my-footer">
-    <p>Email</p>
-    <p>LinkedIn</p>
+
+
+  <div class="my-footer" id="contact">
+    <h2>Connect with me</h2>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/schwaederle/"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script type="text/javascript" src="typed.js"></script>
 </body>
 </html>

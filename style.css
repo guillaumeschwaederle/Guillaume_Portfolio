@@ -1,6 +1,17 @@
+:root {
+	--black: rgb(40, 40, 40);
+	--gray: rgb(100, 100, 100);
+	--green: #5AF474;
+}
+
 body {
 	margin: 0;
-	background: rgba(30, 30, 30, 0.05);
+	background: rgba(30, 30, 30, 0.03);
+	color: var(--black);
+}
+
+/*body * {
+	text-decoration: none !important;
 }
 
 /*Ce qui fait que la navbar reste en haut*/
@@ -35,32 +46,90 @@ body {
 	height:60px;
 }
 
-.landing {
-	background: red;
-	height: calc(100vh - 60px);
+.my-navbar-right a:hover {
+text-decoration: none;
+border-bottom: 5px solid var(--green);
 }
 
-.interests {
-	background: blue;
+.landing .element {
+	color: var(--green);
+}
+
+.landing h2 {
+	color: var(--gray);
+	margin-top: 30px;
+}
+
+.button-main {
+	padding: 10px 15px;
+	background: var(--green);
+	border-radius: 3px;
+	color: white;
+	font-size: 20px;
+	transition: all 200ms ease;
+	border: 2px solid transparent;
+}
+
+.button-main:hover {
+	text-decoration: none;
+	color: var(--green);
+	background: white;
+	border: 2px solid var(--green);
+}
+
+.landing-content {
+	min-height: calc(100vh - 60px);
+	display: flex;
+	/*Centre verticalement dans la navbar*/
+	align-items: center;
+	/*Pousse le contenu des 2 côtés*/
+	justify-content: center;
+}
+
+.interests h2 {
+	text-align: center;
+}
+
+.interest:hover h3 {
+	color: var(--green);
+	opacity: 
+}
+
+.interest img{
+	height: 40px;
+}
+
+.interest {
+	text-align: center;
+}
+
+.interest p {
+	color: var(--gray);
+}
+
+
+h2{
+	margin-bottom: 40px;
 }
 
 .projects{
-	background: green;
-	height: 50vh;
-}
-.recommendations {
-	background: yellow;
-	height: 50vh;
+	min-height: 50vh;
+	padding-top: 80px;
 }
 
-.my-footer {
-	height: 25vh;
+.projects h2 {
+	text-align: center;
+}
+
+.recommendations {
+	height: 50vh;
+	padding-top: 40px;
 }
 
 #guillaume_pic {
 	background-image: url("images/guillaume_profile.jpg");
-	width: 100%;
-	height: 100%;
+	width: 350px;
+	height: 350px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
@@ -71,8 +140,80 @@ body {
 }
 
         
- .flex-container {
- 	height: 100vh;
+.flex-container {
+ height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.project {
+	background-position: center;
+	background-size: cover;
+	border-radius: 3px;
+	box-shadow: 0 0 20px rgba(100, 100, 100, 0.1);
+	color: inherit;
+	position: relative;
+	height: 240px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.project-content {
+	color: white;
+	opacity: 0;
+	padding: 35px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: var(--green);
+	transition: all 200ms ease;
+}
+
+.project:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 0 15px rgba(40, 40, 40, 0.3);
+}
+
+.project:hover .project-content {
+	visibility: visible;
+	opacity: 0.6;	
+}
+
+
+
+.recommendation {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	}
+/*	display: flex;
+	justify-content: center;
+
+	align-items: center;*/
+
+
+.my-footer {
+background-color: var(--gray);
+padding: 30px 0;
+text-align: center;
+
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.footer-links a {
+  color: var(--green);
+  opacity: 0.50;
+  text-decoration: none;
+  font-size: 50px;
+  padding: 0px 50px;
+}
+.footer-links a:hover {
+  opacity: 1;
 }
